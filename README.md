@@ -1,4 +1,4 @@
-tldr
+learning
 ====
 
-learning by doing
+the hope here is to encourage learning by doing. it's a work in progress
