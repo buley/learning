@@ -55,12 +55,14 @@ var run_server = function( html, css, javascript, callback ) {
 		, response_code = 404
 		, response = '';
 
+		console.log('# Inbound request for	' + req.url);
+
 		if ('/' === req.url || '/index.html' === req.url) {
 			headers = {'Content-Type': 'text/html'};
 			response_code = 200;
 			response = html;
 		} else if ('/scripts/script.js' === req.url) {
-			headers = {'Content-Type': 'text/script'};
+			headers = {'Content-Type': 'text/javascript'};
 			response_code = 200;
 			response = javascript;
 		} else if ('/stylesheets/style.css' === req.url) {
@@ -72,7 +74,7 @@ var run_server = function( html, css, javascript, callback ) {
 		res.writeHead(response_code, headers);
 		res.end(response);	
 
-	}).listen( 1234, '127.0.0.1');
+	}).listen(1234, '127.0.0.1');
 
 	if ('function' === typeof callback) {
 		callback( server ); 
@@ -92,5 +94,3 @@ load_html( function( html ) {
 		});
 	});
 });
-
-
