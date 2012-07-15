@@ -7,10 +7,10 @@ echo "# This is a (javascript-) node.js-powered example webserver."
 echo "# It runs a webserver (located at example_website/server.js)"
 echo "# and responds on port 80 (the default port for HTTP requests from the browser)."
 echo "#"
-echo "# This server serves up the contents of the website located in that directory:"
-echo "# * example_website/index.html"
-echo "# * example_website/scripts/script.js"
-echo "# * example_website/stylesheets/style.css"
+echo "# This server serves up the contents of the website located in /programming_languges/javascript/browser/example_website/:"
+echo "# * /programming_languges/javascript/browser/example_website/index.html"
+echo "# * /programming_languges/javascript/browser/example_website/scripts/script.js"
+echo "# * /programming_languges/javascript/browser/example_website/stylesheets/style.css"
 echo "#"
 echo "# Together, the above files are enough to make a basic website. If you want"
 echo "# to add more assets or a more complex server you should look into the node-static"
@@ -26,13 +26,13 @@ echo "###"
 echo ""
 
 # Display server.js contents
-cat example_website/server.js
+cat server.js
 
 # Talk about running the file
 echo ""
 echo "###"
 echo "#"
-echo "# The results of running running.js ('node example_website/server.js')"
+echo "# The results of running running.js ('node server.js')"
 echo "# are displayed below"
 echo "#"
 echo "# Note that this webserver will run until you kill it off"
@@ -42,4 +42,4 @@ echo "###"
 echo ""
 
 # Run the file
-node example_website/server.js
+node server.js

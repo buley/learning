@@ -6,7 +6,7 @@ var fs = require('fs')
 /* Load HTML File */
 
 var load_html = function( callback ) {
-	fs.readFile(__dirname + '/index.html', 'ascii', function(err,data){
+	fs.readFile(__dirname + '/../../browser/example_website/index.html', 'ascii', function(err,data){
 		if(err) {
 			console.error("Could not open %s", err);
 			process.exit(1);
@@ -20,7 +20,7 @@ var load_html = function( callback ) {
 /* Load CSS File */
 
 var load_css = function( html, callback ) {
-	fs.readFile(__dirname + '/stylesheets/style.css', 'ascii', function(err,data){
+	fs.readFile(__dirname + '/../../browser/example_website/stylesheets/style.css', 'ascii', function(err,data){
 		if(err) {
 			console.error("Could not open %s", err);
 			process.exit(1);
@@ -34,7 +34,7 @@ var load_css = function( html, callback ) {
 /* Load JavaScript File */
 
 var load_javascript = function( html, css, callback ) {
-	fs.readFile(__dirname + '/scripts/script.js', 'ascii', function(err,data){
+	fs.readFile(__dirname + '/../../browser/example_website/scripts/script.js', 'ascii', function(err,data){
 		if(err) {
 			console.error("Could not open %s", err);
 			process.exit(1);
