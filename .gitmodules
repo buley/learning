@@ -1,0 +1,9 @@
+[submodule "programming_languages/javascript/node/node-static/example_server/node_modules/node-static"]
+	path = programming_languages/javascript/node/node-static/example_server/node_modules/node-static
+	url = https://github.com/cloudhead/node-static.git
+[submodule "programming_languages/javascript/books/Backbone_Fundamentals"]
+	path = programming_languages/javascript/books/Backbone_Fundamentals
+	url = https://github.com/addyosmani/backbone-fundamentals.git
+[submodule "programming_languages/javascript/books/Essential_JavaScript_And_jQuery_Patterns_For_Beginners"]
+	path = programming_languages/javascript/books/Essential_JavaScript_And_jQuery_Patterns_For_Beginners
+	url = https://github.com/addyosmani/essential-js-design-patterns.git
